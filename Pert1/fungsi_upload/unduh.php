@@ -1,5 +1,5 @@
 <?php
-$myDir = "C:/xampp/htdocs/pwd-1800018121/upload_file/";
+$myDir = "C:/xampp/htdocs/Praktikum-PWD-1800018142/pert1/fungsi_upload/";
 $dir = opendir($myDir);
 echo "Isi folder (klik link untuk download : <br>";
 while($tmp = readdir($dir)){
