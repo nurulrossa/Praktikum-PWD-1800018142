@@ -49,9 +49,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $gender = test_input($_POST["gender"]);
     }
 
-    /*if((!empty($nama)) && (!empty($email)) && (!empty($gender)) && (filter_var($email, FILTER_VALIDATE_EMAIL))){
+    if((!empty($nama)) && (!empty($email)) && (!empty($gender)) && (filter_var($email, FILTER_VALIDATE_EMAIL))){
         $result = mysqli_query($con, "INSERT INTO user(nama,email,web,komentar,gender) VALUES('$nama','$email', '$website','$comment','$gender')");
-    }*/
+    }
 }
  
 function test_input($data) {
@@ -103,7 +103,7 @@ function test_input($data) {
  
 <?php
     echo "<h2>Data yang anda isi:</h2>";
-    /*$result = mysqli_query($con, "SELECT * FROM user ORDER BY nama DESC");
+    $result = mysqli_query($con, "SELECT * FROM user ORDER BY nama DESC");
     if(isset($result)){
         while($user_data = mysqli_fetch_array($result)) { 
             echo $user_data['nama']."<br>";
@@ -112,8 +112,8 @@ function test_input($data) {
             echo $user_data['komentar']."<br>"; 
             echo $user_data['gender']."<br>";
         }
-    }*/
-    echo $nama;
+    }
+    /*echo $nama;
  echo "<br>";
  
  echo $email;
@@ -125,7 +125,7 @@ function test_input($data) {
  echo $comment;
  echo "<br>";
  
- echo $gender;
+ echo $gender;*/
 ?>
 </body>
 </html>
